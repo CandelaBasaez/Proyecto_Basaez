@@ -4,9 +4,6 @@
     padding: 0;
 }
 
-:root{
-    --bs-body-font-family: 'Libre Baskerville Regular';
-}
 
 @font-face{
     font-family: 'Marcellus';
@@ -41,6 +38,10 @@
     font-family: 'Libre Baskerville Regular',serif;
     font-weight: bold;
     color: black;
+}
+
+.navvar-toggler{
+    border: 0 !important;
 }
 
 footer{
@@ -194,14 +195,14 @@ footer p{
 }
 
 .producto{
-    height: 250px !important; 
-    width: 200px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    padding: 10px !important;
+    height: 280px ; 
+    width: 230px;
+    display: flex ;
+    flex-direction: column ;
+    align-items: center ;
+    padding: 10px ;
     background-color: e9cfc9;
-    font-size: 14px !important;
+    font-size: 14px ;
     border-radius: 10px;
 }
 
@@ -212,17 +213,20 @@ footer p{
 }
 
 .producto h2{
-    margin-top: 10px !important;
+    margin-top: 10px ;
     text-align: center;
-    font-family: 'Libre Baskerville Regular', serif !important;
-    font-size: 16px !important;
+    font-family: 'Libre Baskerville Regular', serif ;
+    font-size: 18px ;
+    font-weight: bold;
+    margin-bottom: 0;
 }
 
 .producto p{
     text-align: center;
-    font-family: 'Libre Baskerville Regular',serif !important;
-    font-size: 16px !important;
+    font-family: 'Libre Baskerville Regular',serif ;
+    font-size: 16px ;
 }
+
 .categoria{
     display: flex;
     flex-direction: column;
@@ -234,6 +238,7 @@ footer p{
     font-family: 'Libre Baskerville Regular', serif;
     font-size: 30px;
     margin-left: 30px;
+    font-weight: bold;
 }
 
 .opciones{
@@ -278,26 +283,6 @@ footer p{
     margin-top: 30px;
 }
 
-.opcion h1{
-    font-size: 30px;
-    margin: 15px;
-    text-align: center;
-}
-
-.opcion{
-    font-family: 'Libre Baskerville Regular',serif;
-    background-color: e9cfc9;
-    height: 208px;
-    width: 400px;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.opcion ul{
-    font-size: 20px;
-    margin-left: 30px;
-    margin-top: 10px;
-}
 
 .combinaciones{
     display: flex;
@@ -308,12 +293,43 @@ footer p{
     margin-bottom: 20px;
 }
 
-.combos{
+.combos h1{
     font-family: 'Libre Baskerville Regular',serif;
-    font-size: 30px;
-    margin-left: 50px;
+    font-size: 50px;
+    margin-left: 30px;
     margin-top: 10px;
     margin-bottom: 10pxs;
+    font-weight: bold;
+}
+
+.combos h2{
+    font-family: 'Libre Baskerville Regular',serif;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10pxs;
+}
+
+
+.opcion h1{
+    font-size: 30px;
+    margin: 15px;
+    text-align: center;
+}
+
+.opcion{
+    font-family: 'Libre Baskerville Regular',serif;
+    background-color: e9cfc9;
+    height: 250px;
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.opcion ul{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
 
@@ -463,24 +479,16 @@ footer p{
     border-width: 3px;
 }
 
-.container-fluid{
-    background-color: 9bb8c1;
-    height: 75px;
-    width: 100%;
-    position: sticky;
-}
+@media (max-width: 480px){
+    footer{
+        height: 200px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    
+    .itemE{
+        display: block;
+        margin-left: 10px;
+    }
 
-.navbar-brand{
-    margin-left: 20px;
-    font-family: 'Marcellus', serif;
-    font-weight: bold ;
-    font-size: 50px;
-}
-
-#navbarNavDropdown{
-    display: flex;
-    justify-content: flex-end;
-    font-family: 'Libre Baskerville Regular',serif;
-    font-weight: bold;
-    color: black;
 }
