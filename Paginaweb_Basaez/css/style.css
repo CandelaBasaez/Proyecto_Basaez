@@ -605,4 +605,30 @@ footer p{
         background-color: e9cfc9;
     }
 
+    .titulos{
+        height: 200px;
+    }
+    
+    .titulos h1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    #lectura p{
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    #lectura ul{
+        font-family: 'Libre Baskerville Regular',serif;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+    
+
 }
