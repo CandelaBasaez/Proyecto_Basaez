@@ -199,6 +199,7 @@ footer p{
     display: flex ;
     flex-direction: column ;
     align-items: center ;
+    justify-content: center;
     padding: 10px ;
     background-color: e9cfc9;
     font-size: 14px ;
@@ -275,6 +276,7 @@ footer p{
     font-weight: bold;
 }
 
+
 .botonVolver{
     display: block;
     text-align: center;
@@ -309,13 +311,6 @@ footer p{
     margin-bottom: 10pxs;
 }
 
-
-.opcion h1{
-    font-size: 30px;
-    margin: 15px;
-    text-align: center;
-}
-
 .opcion{
     font-family: 'Libre Baskerville Regular',serif;
     background-color: e9cfc9;
@@ -323,6 +318,12 @@ footer p{
     width: 400px;
     padding: 10px;
     border-radius: 10px;
+}
+
+.opcion h1{
+    font-size: 30px;
+    margin: 15px;
+    text-align: center;
 }
 
 .opcion ul{
@@ -622,6 +623,72 @@ footer p{
         font-size: 50px;
         text-align: center;
     }
+
+    .producto{
+        height: 285px ; 
+        width: 250px;
+        padding: 10px ;
+        margin-bottom: 10px;
+    }
+    
+    .opciones{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: space-around;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    
+    .combinaciones{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: space-around;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .combos h1{
+        font-family: 'Libre Baskerville Regular',serif;
+        font-size: 30px;
+        margin-left: 30px;
+        margin-top: 10px;
+        margin-bottom: 10pxs;
+        font-weight: bold;
+    }
+
+    .combos h2{
+        font-family: 'Libre Baskerville Regular',serif;
+        font-size: 20px;
+        margin-left: 30px;
+        margin-top: 10px;
+        margin-bottom: 10pxs;
+    }
+
+    .opcion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+
+    .opcion h1{
+        font-size: 25px;
+        margin: 15px;
+        text-align: center;
+    }
+
+    .opcion ul{
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
 
     #lectura p{
         font-size: 20px;
