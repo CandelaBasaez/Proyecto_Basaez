@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../imagenes/favicon.png">
+    <title>Ubicación y contacto</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Peonias</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./menu.html">Menú</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./para-compartir.html">Para compartir</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./salon-lectura.html">Salón de lectura</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./ubicacion-contacto.html">Ubicación y contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+       <div class="titulos" id="tituloInfo">
+            <h1>Ubicación y contacto</h1>
+       </div>
+       <div class="infoLugar">
+            <h1>Dirección:</h1>
+            <h2>Arroyo 484, CABA</h2>
+       </div>
+        <div class="infoLugar">
+            <h1>Horario:</h1>
+            <h2>Lunes a viernes 8hs. a 20hs.</h2>
+            <h2>Sábados y domingos de 9hs. a 20hs.</h2>
+        </div>
+        <div id="mapa">
+            <div id="estiloMapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13137.863078263941!2d-58.38913083001826!3d-34.59238190303936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab6cb7172df%3A0xe5b387a211a37d97!2sArroyo%20484%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1706330917354!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="infoLugar">
+            <h1>Contacto</h1>
+            <h2>Whatsapp (solo mensaje): +11111111</h2>
+            <h2>Instagram (por mensaje directo): @peonias.te</h2>
+        </div>
+       <div class="infoLugar">
+            <h1>Reservas:</h1>
+            <h2>Si deseas una reserva podes rellenar el formulario con tus datos y los datos necesarios para la reserva. Te confirmaremos la reserva desde nuestra direccion de correo electronico peoniassalonte@gmail.com</h2>
+       </div>
+       <section id="areaForm">
+            <div id="formulario">
+                <form action="">
+                    <input type="text" placeholder="Ingresa tu dirección de email" class="campoForm">
+                    <input type="text" placeholder="Ingresa tu nombre completo" class="campoForm">
+                    <h2>¿En que sector desea reservar?</h2>
+                    <div id="lugaresReserva">
+                        <label for="salon">
+                            <input type="radio" name="salon" id="principal">
+                            Salón principal
+                        </label>
+                        <br>
+                        <label for="salon">
+                            <input type="radio" name="salon" id="lecturaForm">
+                            Salón de lectura
+                        </label>
+                    </div>
+                    <br>
+                    <textarea name="" id="textoForm" cols="30" rows="5" placeholder="Ingrese los siguientes datos: Fecha para la que desea realizar la reserva, horario de la reserva, y cantidad de personas que van a asistir"></textarea>
+                    <br>
+                    <input type="submit" value="Enviar" id="botonEnviar">
+                </form>
+            </div>
+       </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li class="itemE"><a href="index.html" class="encabezado">Inicio</a></li>
+                <li class="itemE"><a href="./paginas/menu.html" class="encabezado">Menú</a></li>
+                <li class="itemE"><a href="./paginas/para-compartir.html" class="encabezado">Para compartir</a></li>
+                <li class="itemE"><a href="./paginas/salon-lectura.html" class="encabezado">Salón de lectura</a></li>
+                <li class="itemE"><a href="./paginas/ubicacion-contacto.html" class="encabezado">Ubicación y contacto</a></li>
+            </ul>
+            <div id="footer_ubicacion">
+                <img src="../imagenes/iconomapa.png" alt="ubicacion">
+                <p>Arroyo 484, CABA</p>
+            </div>
+            <a href="ubicacion-contacto.html" class="links"><img src="../imagenes/logo_mail.png" alt="Link al mail" id="link-mail"></a>
+            <a href="ubicacion-contacto.html" class="links"><img src="../imagenes/logo_insta.png" alt="Link a instagram" id="link-insta"></a>
+        </nav>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
