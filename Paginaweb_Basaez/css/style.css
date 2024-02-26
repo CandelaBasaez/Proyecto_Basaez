@@ -32,8 +32,7 @@
     font-size: 50px;
 }
 
-#navbarNavDropdown{
-    display: flex;
+#navbarNavAltMarkup{
     justify-content: flex-end;
     font-family: 'Libre Baskerville Regular',serif;
     font-weight: bold;
@@ -487,6 +486,7 @@ footer p{
 
     .navbar{
         padding: 0;
+        z-index: 3;
     }
     .container-fluid{
         background-color: 9bb8c1;
@@ -502,9 +502,8 @@ footer p{
         font-size: 50px;
     }
     
-    #navbarNavDropdown{
-        display: flex;
-        justify-content: flex-end;
+    #navbarNavAltMarkup{
+        z-index: 2;
         font-family: 'Libre Baskerville Regular',serif;
         font-weight: bold;
         color: black;
@@ -550,7 +549,6 @@ footer p{
     }
     
     .carousel-item p{
-        z-index: 1;
         text-align: center;
         font-size: 16px;
         color: black;
@@ -639,6 +637,7 @@ footer p{
         margin-top: 10px;
         margin-bottom: 20px;
         margin-left: 30px;
+        margin-right: 10px;
     }
 
     .infoLugar{
