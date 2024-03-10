@@ -1,0 +1,111 @@
+.infoLugar{
+    font-family: 'Libre Baskerville Regular',serif;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#mapa{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#formulario{
+    background-color: $secundario;
+    border-radius: 10px;
+    border-style: dotted;
+    border-color: $primario;
+    border-width: 3px;
+    height: 430px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 550px;
+    font-family:'Libre Baskerville Regular',serif;
+    h2{
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+}
+
+#lugaresReserva{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    label{
+        margin-right: 10px;
+    }
+}
+
+.campoForm{
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-family: 'Libre Baskerville Regular',serif;
+    padding-left: 10px;
+    border-color: $borde-campos;
+    border-style: solid;
+}
+
+#textoForm{
+    border-radius: 10px;
+    font-family: 'Libre Baskerville Regular',serif;
+    padding-left: 10px;
+    border-color: $borde-campos;
+    border-style: solid;
+}
+
+#areaForm{
+    justify-content: space-between;
+}
+
+#botonEnviar{
+    font-family: 'Libre Baskerville Regular',serif;
+    font-size: 15px;
+    color: black;
+    background-color: beige;
+    border-radius: 5px;
+    border-color: $borde-campos;
+    border-style: solid;
+    height: 30px;
+    width: 80px;
+    margin-top: 20px;
+    &:hover{
+        background-color: $borde-campos;
+        font-weight: bold;
+    }
+    &:active{
+        background-color: $enviar-activo;
+        border-color: $enviar-activo;
+        font-weight: bold;
+        color: white;
+    }
+}
+
+#mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    iframe{
+        width: 600px;
+        height: 500px;
+        border-radius: 10px;
+    }
+}
+
+#estiloMapa{
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+}

@@ -18,11 +18,11 @@
     img{
         object-fit: cover;
     }
-    .imagen-carousel{
-        filter: blur(3px);
-    }
 }
 
+.imagen-carousel{
+    filter: blur(3px);
+}
 
 .seccion-main{
     height: 400px;
@@ -34,16 +34,8 @@
     "titulo_inicio imagen_inicio"
     "titulo_inicio imagen_inicio"
     "titulo_inicio imagen_inicio";
-    background-color: ffedda;
+    background-color: $primario;
     font-family: 'Libre Baskerville Regular',serif;
-    .seccion-main_titulo{
-        grid-area: titulo_inicio;
-        padding-top: 50px;  
-    }
-    
-    .seccion-main_imagen{
-        grid-area: imagen_inicio;
-    }
     h1{
         margin-left: 50px;
         font-size: 45px;
@@ -72,7 +64,15 @@
     }
 }
 
-//Armar condicional
+.seccion-main_titulo{
+    grid-area: titulo_inicio;
+    padding-top: 50px;  
+}
+
+.seccion-main_imagen{
+    grid-area: imagen_inicio;
+}
+
 .color{
-    background-color: e9cfc9;
+    background-color: $secundario;
 }

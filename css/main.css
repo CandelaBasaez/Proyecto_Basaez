@@ -1,18 +1,432 @@
-/* Error: expected ")".
- *    ,
- * 13 |     primario: ffedda
- *    |             ^
- *    '
- *   scss\general\variables.scss 13:13  @import
- *   scss\app.scss 2:9                  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ")".\a    \2577 \a 13 \2502      primario: ffedda\d\a    \2502              ^\a    \2575 \a   scss\\general\\variables.scss 13:13  @import\a   scss\\app.scss 2:9                  root stylesheet';
+@font-face {
+  font-family: "Marcellus";
+  src: url(../fuentes/Marcellus/Marcellus-Regular.ttf);
 }
+@font-face {
+  font-family: "Libre Baskerville Regular";
+  src: url(../fuentes/Libre_Baskerville/LibreBaskerville-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  padding: 0;
+}
+.navbar .container-fluid {
+  background-color: 9bb8c1;
+  height: 75px;
+  width: 100%;
+  position: sticky;
+}
+.navbar .container-fluid .navbar-brand {
+  margin-left: 20px;
+  font-family: "Marcellus", serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+.navbar .container-fluid #navbarNavAltMarkup {
+  justify-content: flex-end;
+  font-family: "Libre Baskerville Regular", serif;
+  font-weight: bold;
+  color: black;
+}
+.navbar .container-fluid .navbar-toggler {
+  border: 0 !important;
+}
+
+footer {
+  background-color: 9bb8c1;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  font-family: "Libre Baskerville Regular", serif;
+}
+footer p {
+  display: inline;
+}
+footer #footer_ubicacion {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer #footer_ubicacion img {
+  height: 20px;
+  width: 20px;
+}
+footer #link-mail {
+  height: 30px;
+  width: 40.5px;
+}
+footer #link-insta {
+  height: 30px;
+  width: 30px;
+}
+footer .links {
+  margin-top: 50px;
+}
+footer .encabezado {
+  text-decoration: none;
+  color: black;
+}
+footer .itemE {
+  display: inline;
+  margin-left: 10px;
+}
+
+.titulos {
+  height: 250px;
+  width: 100%;
+  background-image: url("../imagenes/carrusel.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titulos h1 {
+  font-family: "Marcellus", serif;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.carousel-item {
+  height: 500px;
+  width: 100%;
+}
+.carousel-item h5 {
+  z-index: 1;
+  text-align: center;
+  font-size: 70px;
+  color: black;
+  font-family: "Marcellus", serif;
+}
+.carousel-item p {
+  z-index: 1;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  font-family: "Marcellus", serif;
+}
+.carousel-item img {
+  object-fit: cover;
+}
+
+.imagen-carousel {
+  filter: blur(3px);
+}
+
+.seccion-main {
+  height: 400px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 20% auto 20%;
+  grid-template-areas: "titulo_inicio imagen_inicio" "titulo_inicio imagen_inicio" "titulo_inicio imagen_inicio";
+  background-color: ffedda;
+  font-family: "Libre Baskerville Regular", serif;
+}
+.seccion-main h1 {
+  margin-left: 50px;
+  font-size: 45px;
+}
+.seccion-main p {
+  margin-left: 50px;
+  font-size: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.seccion-main img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.seccion-main a {
+  margin-left: 50px;
+  text-decoration: underline;
+  color: black;
+  font-family: "Libre Baskerville Regular", serif;
+  font-size: 20px;
+}
+
+.seccion-main_titulo {
+  grid-area: titulo_inicio;
+  padding-top: 50px;
+}
+
+.seccion-main_imagen {
+  grid-area: imagen_inicio;
+}
+
+.color {
+  background-color: e9cfc9;
+}
+
+.producto {
+  height: 280px;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: e9cfc9;
+  font-size: 14px;
+  border-radius: 10px;
+}
+.producto img {
+  width: 175px;
+  height: 175px;
+  margin-top: 15px;
+}
+.producto h2 {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Libre Baskerville Regular", serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.producto p {
+  text-align: center;
+  font-family: "Libre Baskerville Regular", serif;
+  font-size: 16px;
+}
+
+.categoria {
+  display: flex;
+  flex-direction: column;
+}
+.categoria h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Libre Baskerville Regular", serif;
+  font-size: 30px;
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+.opciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.botonArriba {
+  text-decoration: none;
+  color: 9bb8c1;
+  font-weight: bold;
+  font-family: "Libre Baskerville Regular", serif;
+  border-style: solid;
+  border-color: 9bb8c1;
+  border-width: 3px;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+}
+.botonArriba:hover {
+  background-color: 9bb8c1;
+  color: white;
+  font-weight: bold;
+}
+.botonArriba:active {
+  background-color: 5c6e75;
+  border-color: 5c6e75;
+  color: white;
+  font-weight: bold;
+}
+
+.botonVolver {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.combinaciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.combos h1 {
+  font-family: "Libre Baskerville Regular", serif;
+  font-size: 50px;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.combos h2 {
+  font-family: "Libre Baskerville Regular", serif;
+  font-size: 30px;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.opcion {
+  font-family: "Libre Baskerville Regular", serif;
+  background-color: e9cfc9;
+  height: 250px;
+  width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.opcion h1 {
+  font-size: 30px;
+  margin: 15px;
+  text-align: center;
+}
+.opcion ul {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+#lectura {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#lectura p {
+  font-family: "Libre Baskerville Regular", serif;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#lectura ul {
+  font-family: "Libre Baskerville Regular", serif;
+  font-size: 23px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 150px;
+}
+#lectura img {
+  height: 400px;
+  width: 327px;
+}
+
+.infoLugar {
+  font-family: "Libre Baskerville Regular", serif;
+  font-size: 25px;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#mapa {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#formulario {
+  background-color: e9cfc9;
+  border-radius: 10px;
+  border-style: dotted;
+  border-color: ffedda;
+  border-width: 3px;
+  height: 430px;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 550px;
+  font-family: "Libre Baskerville Regular", serif;
+}
+#formulario h2 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+#lugaresReserva {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+#lugaresReserva label {
+  margin-right: 10px;
+}
+
+.campoForm {
+  height: 50px;
+  width: 400px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-family: "Libre Baskerville Regular", serif;
+  padding-left: 10px;
+  border-color: #dbb2a9;
+  border-style: solid;
+}
+
+#textoForm {
+  border-radius: 10px;
+  font-family: "Libre Baskerville Regular", serif;
+  padding-left: 10px;
+  border-color: #dbb2a9;
+  border-style: solid;
+}
+
+#areaForm {
+  justify-content: space-between;
+}
+
+#botonEnviar {
+  font-family: "Libre Baskerville Regular", serif;
+  font-size: 15px;
+  color: black;
+  background-color: beige;
+  border-radius: 5px;
+  border-color: #dbb2a9;
+  border-style: solid;
+  height: 30px;
+  width: 80px;
+  margin-top: 20px;
+}
+#botonEnviar:hover {
+  background-color: #dbb2a9;
+  font-weight: bold;
+}
+#botonEnviar:active {
+  background-color: #c9a197;
+  border-color: #c9a197;
+  font-weight: bold;
+  color: white;
+}
+
+#mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#mapa iframe {
+  width: 600px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+#estiloMapa {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+}
+
+/*# sourceMappingURL=main.css.map */
