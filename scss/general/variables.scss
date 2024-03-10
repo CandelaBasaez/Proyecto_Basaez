@@ -1,0 +1,19 @@
+@font-face{
+    font-family: 'Marcellus';
+    src: url(../fuentes/Marcellus/Marcellus-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Libre Baskerville Regular';
+    src: url(../fuentes/Libre_Baskerville/LibreBaskerville-Regular.ttf);
+}
+//combinar formatos
+$colores: (
+    layoutc: 9bb8c1
+    primario: ffedda
+    secundario: e9cfc9
+    borde-formulario: ffedda
+    volver-activo: 5c6e75
+    borde-campos:#dbb2a9
+    enviar-activo:#c9a197
+)

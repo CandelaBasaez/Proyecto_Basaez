@@ -1,0 +1,24 @@
+.navbar{
+    padding: 0;
+    .container-fluid{
+        background-color: 9bb8c1;
+        height: 75px;
+        width: 100%;
+        position: sticky;
+        .navbar-brand{
+            margin-left: 20px;
+            font-family: 'Marcellus', serif;
+            font-weight: bold ;
+            font-size: 50px;
+        }
+        #navbarNavAltMarkup{
+            justify-content: flex-end;
+            font-family: 'Libre Baskerville Regular',serif;
+            font-weight: bold;
+            color: black;
+        }
+        .navbar-toggler{
+            border: 0 !important;
+        }        
+    }
+}

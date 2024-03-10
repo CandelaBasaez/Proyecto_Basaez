@@ -1,0 +1,14 @@
+//General
+@import './general/variables.scss';
+@import './general/reset.scss';
+
+//Layout
+@import './layout/header';
+@import './layout/footer.scss';
+
+//Pages
+@import './pages/inicio.scss';
+@import './pages/menu.scss';
+@import './pages/para-compartir.scss';
+@import './pages/salon-lectura.scss';
+@import './pages/ubicacion-contacto.scss';

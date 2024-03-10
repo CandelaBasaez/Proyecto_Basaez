@@ -1,0 +1,42 @@
+footer{
+    background-color: 9bb8c1;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Libre Baskerville Regular', serif;
+    p{
+        display: inline;
+    }
+    #footer_ubicacion{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        img{
+            height:20px;
+            width:20px ;
+        }
+    }
+    #link-mail{
+        height: 30px;
+        width: 40.5px;
+    }
+    
+    #link-insta{
+        height:30px;
+        width: 30px;
+    }
+    
+    .links{ 
+        margin-top: 50px;
+    }
+    
+    .encabezado{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .itemE{
+        display: inline;
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,78 @@
+.carousel-item{
+    height: 500px;
+    width: 100%;
+    h5{
+        z-index: 1;
+        text-align: center;
+        font-size: 70px;
+        color: black;
+        font-family: 'Marcellus',serif;
+    }
+    p{
+        z-index: 1;
+        text-align: center;
+        font-size: 30px;
+        color: black;
+        font-family: 'Marcellus',serif;
+    }
+    img{
+        object-fit: cover;
+    }
+    .imagen-carousel{
+        filter: blur(3px);
+    }
+}
+
+
+.seccion-main{
+    height: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 20% auto 20%;
+    grid-template-areas: 
+    "titulo_inicio imagen_inicio"
+    "titulo_inicio imagen_inicio"
+    "titulo_inicio imagen_inicio";
+    background-color: ffedda;
+    font-family: 'Libre Baskerville Regular',serif;
+    .seccion-main_titulo{
+        grid-area: titulo_inicio;
+        padding-top: 50px;  
+    }
+    
+    .seccion-main_imagen{
+        grid-area: imagen_inicio;
+    }
+    h1{
+        margin-left: 50px;
+        font-size: 45px;
+    }
+    p{
+        margin-left: 50px;
+        font-size: 25px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        
+    }
+    img{
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+    a{
+        margin-left: 50px;
+        text-decoration: underline;
+        color: black;
+        font-family: 'Libre Baskerville Regular', serif;
+        font-size: 20px;
+    }
+}
+
+//Armar condicional
+.color{
+    background-color: e9cfc9;
+}

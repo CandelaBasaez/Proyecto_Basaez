@@ -1,0 +1,18 @@
+/* Error: expected ")".
+ *    ,
+ * 13 |     primario: ffedda
+ *    |             ^
+ *    '
+ *   scss\general\variables.scss 13:13  @import
+ *   scss\app.scss 2:9                  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected ")".\a    \2577 \a 13 \2502      primario: ffedda\d\a    \2502              ^\a    \2575 \a   scss\\general\\variables.scss 13:13  @import\a   scss\\app.scss 2:9                  root stylesheet';
+}
