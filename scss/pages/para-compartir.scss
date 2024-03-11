@@ -1,3 +1,5 @@
+@import '../general/media-queries.scss';
+
 .combinaciones{
     display: flex;
     flex-direction: row;
@@ -5,6 +7,15 @@
     align-content: space-around;
     margin-top: 20px;
     margin-bottom: 20px;
+    @include media-query-mobile(){
+        flex-wrap: wrap;
+    }
+    @include media-query-tablet-pequena(){
+        flex-wrap: wrap;
+    }
+    @include media-query-tablet-grande(){
+        flex-wrap: wrap;
+    }
 }
 
 .combos{
@@ -15,6 +26,15 @@
         margin-top: 10px;
         margin-bottom: 10px;
         font-weight: bold;
+        @include media-query-mobile(){
+            font-size: 30px;
+        }
+        @include media-query-tablet-pequena(){
+            font-size: 30px;
+        }
+        @include media-query-tablet-grande(){
+            font-size: 30px;
+        }
     }
     h2{
         font-family: 'Libre Baskerville Regular',serif;
@@ -22,6 +42,15 @@
         margin-left: 30px;
         margin-top: 10px;
         margin-bottom: 10px;
+        @include media-query-mobile(){
+            font-size: 20px;
+        }
+        @include media-query-tablet-pequena(){
+            font-size: 20px;
+        }
+        @include media-query-tablet-grande(){
+            font-size: 20px;
+        }
     }
 }
 
@@ -32,10 +61,39 @@
     width: 400px;
     padding: 10px;
     border-radius: 10px;
+    @include media-query-mobile(){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    @include media-query-tablet-pequena(){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    @include media-query-tablet-grande(){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
     h1{
         font-size: 30px;
         margin: 15px;
         text-align: center;
+        @include media-query-mobile(){
+            font-size: 25px;
+        }
+        @include media-query-tablet-pequena(){
+            font-size: 25px;
+        }
+        @include media-query-tablet-grande(){
+            font-size: 25px;
+        }
     }
     ul{
         font-size: 20px;

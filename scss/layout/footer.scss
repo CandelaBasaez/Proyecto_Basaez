@@ -1,5 +1,7 @@
+@import '../general/media-queries.scss';
+
 footer{
-    background-color: 9bb8c1;
+    background-color: $layoutc;
     height: 200px;
     width: 100%;
     text-align: center;
@@ -8,35 +10,64 @@ footer{
     p{
         display: inline;
     }
-    #footer_ubicacion{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        img{
-            height:20px;
-            width:20px ;
+    ul{
+        @include media-query-mobile(){
+            padding-left: 0;
+        }
+        @include media-query-tablet-pequena(){
+            padding-left: 0;
+        }
+        @include media-query-tablet-grande(){
+            padding-left: 0;
         }
     }
-    #link-mail{
-        height: 30px;
-        width: 40.5px;
+    @include media-query-mobile(){
+        height: auto;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
-    
-    #link-insta{
-        height:30px;
-        width: 30px;
+    @include media-query-tablet-pequena(){
+        padding-top: 30px;
     }
-    
-    .links{ 
-        margin-top: 50px;
+    @include media-query-tablet-grande(){
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        height: auto;
     }
-    
-    .encabezado{
-        text-decoration: none;
-        color: black;
+}
+#footer_ubicacion{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    img{
+        height:20px;
+        width:20px ;
     }
-    
-    .itemE{
-        display: inline;
-        margin-left: 10px;
+}
+#link-mail{
+    height: 30px;
+    width: 40.5px;
+}
+
+#link-insta{
+    height:30px;
+    width: 30px;
+}
+
+.links{ 
+    margin-top: 50px;
+}
+
+.encabezado{
+    text-decoration: none;
+    color: black;
+}
+
+.itemE{
+    display: inline;
+    margin-left: 10px;
+    @include media-query-mobile(){
+        display: block;
     }
 }

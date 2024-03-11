@@ -1,24 +1,69 @@
+@import '../general/media-queries.scss';
+
 .navbar{
     padding: 0;
-    .container-fluid{
-        background-color: 9bb8c1;
-        height: 75px;
-        width: 100%;
-        position: sticky;
-        .navbar-brand{
-            margin-left: 20px;
-            font-family: 'Marcellus', serif;
-            font-weight: bold ;
-            font-size: 50px;
-        }
-        #navbarNavAltMarkup{
-            justify-content: flex-end;
-            font-family: 'Libre Baskerville Regular',serif;
-            font-weight: bold;
-            color: black;
-        }
-        .navbar-toggler{
-            border: 0 !important;
-        }        
+    @include media-query-mobile(){
+        z-index: 3;
+    }
+    @include media-query-tablet-pequena(){
+        z-index: 3;
+    }
+    @include media-query-tablet-grande(){
+        z-index: 3;
+    }
+}
+
+.container-fluid{
+    background-color: $layoutc;
+    height: 75px;
+    width: 100%;
+    position: sticky;
+}
+
+.navbar-brand{
+    margin-left: 20px;
+    font-family: 'Marcellus', serif;
+    font-weight: bold ;
+    font-size: 50px;
+    @include media-query-mobile(){
+        margin-left: 105px;
+    }
+    @include media-query-tablet-pequena(){
+        margin-left: 280px;
+    }
+}
+
+#navbarNavAltMarkup{
+    justify-content: flex-end;
+    font-family: 'Libre Baskerville Regular',serif;
+    font-weight: bold;
+    color: black;
+    @include media-query-mobile(){
+        z-index: 2;
+    }
+    @include media-query-tablet-pequena(){
+        z-index: 2;
+    }
+    @include media-query-tablet-grande(){
+        z-index: 2;
+    }
+}
+
+.navbar-toggler{
+    border: 0 !important;
+}        
+
+.navbar-nav{
+    @include media-query-mobile(){
+        padding: 5px;
+        background-color: $layoutc;
+    }
+    @include media-query-tablet-pequena(){
+        padding: 5px;
+        background-color: $layoutc;
+    }
+    @include media-query-tablet-grande(){
+        padding: 5px;
+        background-color: $layoutc;
     }
 }

@@ -1,3 +1,5 @@
+@import '../general/media-queries.scss';
+
 .carousel-item{
     height: 500px;
     width: 100%;
@@ -7,6 +9,17 @@
         font-size: 70px;
         color: black;
         font-family: 'Marcellus',serif;
+        @include media-query-mobile(){
+            font-size: 20px;
+            font-weight: bold;
+        }
+        @include media-query-tablet-pequena(){
+            font-size: 35px;
+        }
+        @include media-query-tablet-grande(){
+            font-size: 35px;
+            font-weight: bold;
+        }
     }
     p{
         z-index: 1;
@@ -14,14 +27,47 @@
         font-size: 30px;
         color: black;
         font-family: 'Marcellus',serif;
+        @include media-query-mobile(){
+            font-size: 16px;
+        }
+        @include media-query-tablet-pequena(){
+            font-size: 20px;
+        }
+        @include media-query-tablet-grande(){
+            font-size: 20px;
+        }
     }
     img{
         object-fit: cover;
+    }
+    @include media-query-mobile(){
+        height:206.78px;
+        width: 100%;
+    }
+    @include media-query-tablet-pequena(){
+        height:300px;
+        width: 100%;
+    }
+    @include media-query-tablet-grande(){
+        height:300px;
+        width: 100%;
     }
 }
 
 .imagen-carousel{
     filter: blur(3px);
+}
+
+.imgTres{
+    @include media-query-mobile(){
+        filter: blur(3px);
+    }
+    @include media-query-tablet-pequena(){
+        filter: blur(3px);
+    }
+    @include media-query-tablet-grande(){
+        filter: blur(3px);
+    }
 }
 
 .seccion-main{
@@ -36,16 +82,47 @@
     "titulo_inicio imagen_inicio";
     background-color: $primario;
     font-family: 'Libre Baskerville Regular',serif;
+    @include media-query-mobile(){
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @include media-query-tablet-pequena(){
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     h1{
         margin-left: 50px;
         font-size: 45px;
+        @include media-query-mobile(){
+            margin-left: 20px;
+            font-size: 35px;
+        }
+        @include media-query-tablet-pequena(){
+            margin-left: 20px;
+            font-size: 40px;
+        }
     }
     p{
         margin-left: 50px;
         font-size: 25px;
         margin-top: 50px;
         margin-bottom: 50px;
-        
+        @include media-query-mobile(){
+            font-size: 15px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            margin-right: 20px;
+        }
+        @include media-query-tablet-pequena(){
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            margin-right: 20px;
+        }
     }
     img{
         height: 300px;
@@ -54,6 +131,26 @@
         border-radius: 12px;
         margin-left: 50px;
         margin-top: 50px;
+        @include media-query-mobile(){
+            height: 200px;
+            width: 200px;
+            margin-top: 10px;
+            justify-self: center;
+            margin-left: 0;
+        }
+        @include media-query-tablet-pequena(){
+            height: 225px;
+            width: 225px;
+            margin-top: 5px;
+            justify-self: center;
+            margin-left: 0;
+        }
+        @include media-query-tablet-grande(){
+            height: 250px;
+            width: 250px;
+            margin-left: 30px;
+            margin-top: 60px;
+        }
     }
     a{
         margin-left: 50px;
@@ -61,12 +158,32 @@
         color: black;
         font-family: 'Libre Baskerville Regular', serif;
         font-size: 20px;
+        @include media-query-mobile(){
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+        @include media-query-tablet-pequena(){
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
     }
 }
 
 .seccion-main_titulo{
     grid-area: titulo_inicio;
     padding-top: 50px;  
+    @include media-query-mobile(){
+        padding-top: 20px;
+    }
+    @include media-query-tablet-pequena(){
+        padding-top: 20px;
+    }
+}
+
+#sobre-nosotros{
+    @include media-query-mobile(){
+        height: 450px;
+    }
 }
 
 .seccion-main_imagen{

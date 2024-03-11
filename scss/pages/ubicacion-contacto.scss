@@ -1,9 +1,26 @@
+@import '../general/media-queries.scss';
+
 .infoLugar{
     font-family: 'Libre Baskerville Regular',serif;
     font-size: 25px;
     margin-left: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
+    @include media-query-mobile(){
+        font-size: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    @include media-query-tablet-pequena(){
+        font-size: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    @include media-query-tablet-grande(){
+        font-size: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 #mapa{
@@ -29,6 +46,21 @@
     margin-bottom: 20px;
     margin-left: 550px;
     font-family:'Libre Baskerville Regular',serif;
+    @include media-query-mobile(){
+        height: 430px;
+        width:96%;
+        margin-left: 0;
+    }
+    @include media-query-tablet-pequena(){
+        height: 430px;
+        width:100%;
+        margin-right: 260px;
+    }
+    @include media-query-tablet-grande(){
+        height: 430px;
+        width:100%;
+        margin-right: 50px;
+    }
     h2{
         margin-top: 5px;
         margin-bottom: 10px;
@@ -55,6 +87,18 @@
     padding-left: 10px;
     border-color: $borde-campos;
     border-style: solid;
+    @include media-query-mobile(){
+        width: 300px;
+        font-size: 15px;
+    }
+    @include media-query-tablet-pequena(){
+        width: 300px;
+        font-size: 15px;
+    }
+    @include media-query-tablet-grande(){
+        width: 300px;
+        font-size: 15px;
+    }
 }
 
 #textoForm{
@@ -67,6 +111,24 @@
 
 #areaForm{
     justify-content: space-between;
+    @include media-query-mobile(){
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @include media-query-tablet-pequena(){
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @include media-query-tablet-grande(){
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 #botonEnviar{
@@ -100,6 +162,18 @@
         width: 600px;
         height: 500px;
         border-radius: 10px;
+        @include media-query-mobile(){
+            width: 350px;
+            height: 250px;
+        }
+        @include media-query-tablet-pequena(){
+            width: 400px;
+            height: 300px;
+        }
+        @include media-query-tablet-grande(){
+            width: 400px;
+            height: 300px;
+        }
     }
 }
 

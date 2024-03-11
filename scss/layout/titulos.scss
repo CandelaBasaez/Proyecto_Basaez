@@ -1,3 +1,5 @@
+@import '../general/media-queries.scss';
+
 .titulos{
     height: 250px;
     width: 100%;
@@ -9,5 +11,26 @@
         font-family: 'Marcellus', serif;
         font-size: 100px;
         font-weight: bold;
+        @include media-query-mobile(){
+            font-size: 50px;
+            text-align: center;
+        }
+        @include media-query-tablet-pequena(){
+            font-size: 50px;
+            text-align: center;
+        }
+        @include media-query-tablet-grande(){
+            font-size: 50px;
+            text-align: center;
+        }
+    }
+    @include media-query-mobile(){
+        height: 200px;
+    }
+    @include media-query-tablet-pequena(){
+        height: 200px;
+    }
+    @include media-query-tablet-grande(){
+        height: 200px;
     }
 }

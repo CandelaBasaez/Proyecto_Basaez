@@ -14,26 +14,89 @@
 .navbar {
   padding: 0;
 }
-.navbar .container-fluid {
+@media (max-width: 480px) {
+  .navbar {
+    z-index: 3;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  .navbar {
+    z-index: 3;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .navbar {
+    z-index: 3;
+  }
+}
+
+.container-fluid {
   background-color: 9bb8c1;
   height: 75px;
   width: 100%;
   position: sticky;
 }
-.navbar .container-fluid .navbar-brand {
+
+.navbar-brand {
   margin-left: 20px;
   font-family: "Marcellus", serif;
   font-weight: bold;
   font-size: 50px;
 }
-.navbar .container-fluid #navbarNavAltMarkup {
+@media (max-width: 480px) {
+  .navbar-brand {
+    margin-left: 105px;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  .navbar-brand {
+    margin-left: 280px;
+  }
+}
+
+#navbarNavAltMarkup {
   justify-content: flex-end;
   font-family: "Libre Baskerville Regular", serif;
   font-weight: bold;
   color: black;
 }
-.navbar .container-fluid .navbar-toggler {
+@media (max-width: 480px) {
+  #navbarNavAltMarkup {
+    z-index: 2;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  #navbarNavAltMarkup {
+    z-index: 2;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  #navbarNavAltMarkup {
+    z-index: 2;
+  }
+}
+
+.navbar-toggler {
   border: 0 !important;
+}
+
+@media (max-width: 480px) {
+  .navbar-nav {
+    padding: 5px;
+    background-color: 9bb8c1;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  .navbar-nav {
+    padding: 5px;
+    background-color: 9bb8c1;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .navbar-nav {
+    padding: 5px;
+    background-color: 9bb8c1;
+  }
 }
 
 footer {
@@ -47,32 +110,79 @@ footer {
 footer p {
   display: inline;
 }
-footer #footer_ubicacion {
+@media (max-width: 480px) {
+  footer ul {
+    padding-left: 0;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  footer ul {
+    padding-left: 0;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  footer ul {
+    padding-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  footer {
+    height: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  footer {
+    padding-top: 30px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  footer {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: auto;
+  }
+}
+
+#footer_ubicacion {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-footer #footer_ubicacion img {
+#footer_ubicacion img {
   height: 20px;
   width: 20px;
 }
-footer #link-mail {
+
+#link-mail {
   height: 30px;
   width: 40.5px;
 }
-footer #link-insta {
+
+#link-insta {
   height: 30px;
   width: 30px;
 }
-footer .links {
+
+.links {
   margin-top: 50px;
 }
-footer .encabezado {
+
+.encabezado {
   text-decoration: none;
   color: black;
 }
-footer .itemE {
+
+.itemE {
   display: inline;
   margin-left: 10px;
+}
+@media (max-width: 480px) {
+  .itemE {
+    display: block;
+  }
 }
 
 .titulos {
@@ -88,6 +198,39 @@ footer .itemE {
   font-size: 100px;
   font-weight: bold;
 }
+@media (max-width: 480px) {
+  .titulos h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  .titulos h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .titulos h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .titulos {
+    height: 200px;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  .titulos {
+    height: 200px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .titulos {
+    height: 200px;
+  }
+}
 
 .carousel-item {
   height: 500px;
@@ -100,6 +243,23 @@ footer .itemE {
   color: black;
   font-family: "Marcellus", serif;
 }
+@media (max-width: 480px) {
+  .carousel-item h5 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  .carousel-item h5 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .carousel-item h5 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+}
 .carousel-item p {
   z-index: 1;
   text-align: center;
@@ -107,12 +267,61 @@ footer .itemE {
   color: black;
   font-family: "Marcellus", serif;
 }
+@media (max-width: 480px) {
+  .carousel-item p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  .carousel-item p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .carousel-item p {
+    font-size: 20px;
+  }
+}
 .carousel-item img {
   object-fit: cover;
+}
+@media (max-width: 480px) {
+  .carousel-item {
+    height: 206.78px;
+    width: 100%;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  .carousel-item {
+    height: 300px;
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .carousel-item {
+    height: 300px;
+    width: 100%;
+  }
 }
 
 .imagen-carousel {
   filter: blur(3px);
+}
+
+@media (max-width: 480px) {
+  .imgTres {
+    filter: blur(3px);
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  .imgTres {
+    filter: blur(3px);
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .imgTres {
+    filter: blur(3px);
+  }
 }
 
 .seccion-main {
@@ -125,15 +334,59 @@ footer .itemE {
   background-color: ffedda;
   font-family: "Libre Baskerville Regular", serif;
 }
+@media (max-width: 480px) {
+  .seccion-main {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  .seccion-main {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .seccion-main h1 {
   margin-left: 50px;
   font-size: 45px;
+}
+@media (max-width: 480px) {
+  .seccion-main h1 {
+    margin-left: 20px;
+    font-size: 35px;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  .seccion-main h1 {
+    margin-left: 20px;
+    font-size: 40px;
+  }
 }
 .seccion-main p {
   margin-left: 50px;
   font-size: 25px;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+@media (max-width: 480px) {
+  .seccion-main p {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  .seccion-main p {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+  }
 }
 .seccion-main img {
   height: 300px;
@@ -143,6 +396,32 @@ footer .itemE {
   margin-left: 50px;
   margin-top: 50px;
 }
+@media (max-width: 480px) {
+  .seccion-main img {
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+    justify-self: center;
+    margin-left: 0;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  .seccion-main img {
+    height: 225px;
+    width: 225px;
+    margin-top: 5px;
+    justify-self: center;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .seccion-main img {
+    height: 250px;
+    width: 250px;
+    margin-left: 30px;
+    margin-top: 60px;
+  }
+}
 .seccion-main a {
   margin-left: 50px;
   text-decoration: underline;
@@ -150,10 +429,38 @@ footer .itemE {
   font-family: "Libre Baskerville Regular", serif;
   font-size: 20px;
 }
+@media (max-width: 480px) {
+  .seccion-main a {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  .seccion-main a {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+}
 
 .seccion-main_titulo {
   grid-area: titulo_inicio;
   padding-top: 50px;
+}
+@media (max-width: 480px) {
+  .seccion-main_titulo {
+    padding-top: 20px;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  .seccion-main_titulo {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #sobre-nosotros {
+    height: 450px;
+  }
 }
 
 .seccion-main_imagen {
@@ -175,6 +482,28 @@ footer .itemE {
   background-color: e9cfc9;
   font-size: 14px;
   border-radius: 10px;
+}
+@media (max-width: 480px) {
+  .producto {
+    height: 285px;
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  .producto {
+    height: 285px;
+    width: 250px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .producto {
+    height: 285px;
+    width: 250px;
+    margin-bottom: 10px;
+  }
 }
 .producto img {
   width: 175px;
@@ -216,6 +545,25 @@ footer .itemE {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+@media (max-width: 480px) {
+  .opciones {
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  .opciones {
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .opciones {
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 
 .botonArriba {
   text-decoration: none;
@@ -256,6 +604,21 @@ footer .itemE {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+@media (max-width: 480px) {
+  .combinaciones {
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  .combinaciones {
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .combinaciones {
+    flex-wrap: wrap;
+  }
+}
 
 .combos h1 {
   font-family: "Libre Baskerville Regular", serif;
@@ -265,12 +628,42 @@ footer .itemE {
   margin-bottom: 10px;
   font-weight: bold;
 }
+@media (max-width: 480px) {
+  .combos h1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  .combos h1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .combos h1 {
+    font-size: 30px;
+  }
+}
 .combos h2 {
   font-family: "Libre Baskerville Regular", serif;
   font-size: 30px;
   margin-left: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+@media (max-width: 480px) {
+  .combos h2 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  .combos h2 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .combos h2 {
+    font-size: 20px;
+  }
 }
 
 .opcion {
@@ -281,10 +674,51 @@ footer .itemE {
   padding: 10px;
   border-radius: 10px;
 }
+@media (max-width: 480px) {
+  .opcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  .opcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .opcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+}
 .opcion h1 {
   font-size: 30px;
   margin: 15px;
   text-align: center;
+}
+@media (max-width: 480px) {
+  .opcion h1 {
+    font-size: 25px;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  .opcion h1 {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .opcion h1 {
+    font-size: 25px;
+  }
 }
 .opcion ul {
   font-size: 20px;
@@ -305,12 +739,52 @@ footer .itemE {
   margin-left: 50px;
   margin-right: 50px;
 }
+@media (max-width: 480px) {
+  #lectura p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  #lectura p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  #lectura p {
+    font-size: 20px;
+  }
+}
 #lectura ul {
   font-family: "Libre Baskerville Regular", serif;
   font-size: 23px;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 150px;
+}
+@media (max-width: 480px) {
+  #lectura ul {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  #lectura ul {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  #lectura ul {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 10px;
+  }
 }
 #lectura img {
   height: 400px;
@@ -323,6 +797,27 @@ footer .itemE {
   margin-left: 50px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+@media (max-width: 480px) {
+  .infoLugar {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  .infoLugar {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .infoLugar {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 #mapa {
@@ -348,6 +843,27 @@ footer .itemE {
   margin-bottom: 20px;
   margin-left: 550px;
   font-family: "Libre Baskerville Regular", serif;
+}
+@media (max-width: 480px) {
+  #formulario {
+    height: 430px;
+    width: 96%;
+    margin-left: 0;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  #formulario {
+    height: 430px;
+    width: 100%;
+    margin-right: 260px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  #formulario {
+    height: 430px;
+    width: 100%;
+    margin-right: 50px;
+  }
 }
 #formulario h2 {
   margin-top: 5px;
@@ -375,6 +891,24 @@ footer .itemE {
   border-color: #dbb2a9;
   border-style: solid;
 }
+@media (max-width: 480px) {
+  .campoForm {
+    width: 300px;
+    font-size: 15px;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  .campoForm {
+    width: 300px;
+    font-size: 15px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .campoForm {
+    width: 300px;
+    font-size: 15px;
+  }
+}
 
 #textoForm {
   border-radius: 10px;
@@ -386,6 +920,30 @@ footer .itemE {
 
 #areaForm {
   justify-content: space-between;
+}
+@media (max-width: 480px) {
+  #areaForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  #areaForm {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  #areaForm {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 #botonEnviar {
@@ -420,6 +978,24 @@ footer .itemE {
   width: 600px;
   height: 500px;
   border-radius: 10px;
+}
+@media (max-width: 480px) {
+  #mapa iframe {
+    width: 350px;
+    height: 250px;
+  }
+}
+@media (min-width: 485px) and (max-width: 1020px) {
+  #mapa iframe {
+    width: 400px;
+    height: 300px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  #mapa iframe {
+    width: 400px;
+    height: 300px;
+  }
 }
 
 #estiloMapa {
