@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="shortcut icon" href="./imagenes/favicon.png">
     <title>Inicio</title>
@@ -79,7 +80,7 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-        <div class="seccion-main" id="sobre-nosotros">
+        <div class="seccion-main" id="sobre-nosotros" data-aos="zoom-in">
             <div class="seccion-main_titulo">
                 <h1>Sobre Peonias</h1>
                 <p>Peonias es un salón de té y cafetería donde podrás encontrar una amplia variedad de productos de elaboración propia. Ofrecemos diferentes opciones para diseñar la experiencia ideal.</p>
@@ -88,7 +89,7 @@
                 <img src="./imagenes/sobrenos.jpg" alt="Foto de la entrada">
             </div>
         </div>
-        <div class="seccion-main color">
+        <div class="seccion-main color" data-aos="zoom-in">
             <div class="seccion-main_titulo">
                 <h1>Menú</h1>
                 <p>Conoce nuestra variedad de té en hebras y las diferentes opciones de cafetería y pastelería con las que contamos en nuestro menú</p>
@@ -98,7 +99,7 @@
                 <img src="./imagenes/menu.jpg" alt="Foto del mostrador">
             </div>
         </div>
-        <div class="seccion-main">
+        <div class="seccion-main" data-aos="zoom-in">
             <div class="seccion-main_titulo">
                 <h1>Desayunos, brunchs y meriendas</h1>
                 <p>Armamos distintas combinaciones ideales para compartir y disfrutar en cada momento del día</p>
@@ -108,7 +109,7 @@
                 <img src="./imagenes/para_compartir.jpg" alt="Foto de merienda">
             </div>  
         </div>
-        <div class="seccion-main color">
+        <div class="seccion-main color" data-aos="zoom-in">
             <div class="seccion-main_titulo">
                 <h1>Salón de lectura</h1>
                 <p>Creamos un salón de lectura que cuenta con una biblioteca llena de libros para leer mientras se disfruta de un desayuno o merienda</p>
@@ -118,7 +119,7 @@
                 <img src="./imagenes/lecturas.jpg" alt="Foto de libros">
             </div>
         </div>
-        <div class="seccion-main">
+        <div class="seccion-main" data-aos="zoom-in">
             <div class="seccion-main_titulo">
                 <h1>Ubicación y contacto</h1>
                 <p>Podes encontrarnos en Arroyo 484 o contactarnos para realizar tu reserva previamente. Selecciona “Conocer más” para conocer nuestros horarios.</p>
@@ -147,5 +148,9 @@
         </nav>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
