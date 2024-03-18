@@ -18,6 +18,9 @@
     height: 75px;
     width: 100%;
     position: sticky;
+    @include media-query-mobile(){
+        justify-content: center;
+    }
 }
 
 .navbar-brand{
@@ -26,7 +29,7 @@
     font-weight: bold ;
     font-size: 50px;
     @include media-query-mobile(){
-        margin-left: 105px;
+        margin-left: 100px;
     }
     @include media-query-tablet-pequena(){
         margin-left: 280px;

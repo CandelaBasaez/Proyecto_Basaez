@@ -36,6 +36,11 @@
   width: 100%;
   position: sticky;
 }
+@media (max-width: 480px) {
+  .container-fluid {
+    justify-content: center;
+  }
+}
 
 .navbar-brand {
   margin-left: 20px;
@@ -45,7 +50,7 @@
 }
 @media (max-width: 480px) {
   .navbar-brand {
-    margin-left: 105px;
+    margin-left: 100px;
   }
 }
 @media (min-width: 485px) and (max-width: 1020px) {
@@ -846,10 +851,10 @@ footer p {
   display: flex;
   flex-direction: row;
   text-align: center;
+  justify-content: center;
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 550px;
   font-family: "Libre Baskerville Regular", serif;
 }
 @media (max-width: 480px) {
@@ -862,15 +867,11 @@ footer p {
 @media (min-width: 485px) and (max-width: 1020px) {
   #formulario {
     height: 430px;
-    width: 100%;
-    margin-right: 260px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1200px) {
   #formulario {
     height: 430px;
-    width: 100%;
-    margin-right: 50px;
   }
 }
 #formulario h2 {
@@ -927,11 +928,13 @@ footer p {
 }
 
 #areaForm {
-  justify-content: space-between;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 @media (max-width: 480px) {
   #areaForm {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -939,7 +942,6 @@ footer p {
 }
 @media (min-width: 485px) and (max-width: 1020px) {
   #areaForm {
-    width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -947,7 +949,6 @@ footer p {
 }
 @media (min-width: 1024px) and (max-width: 1200px) {
   #areaForm {
-    width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
